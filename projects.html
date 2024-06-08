@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="head3">
+        <nav>
+            <img src="images/img1.jpg" class="icon">
+            <h1 class="title"><i>Sahithi Mandadi</i></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul><i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="internship.html">Internships</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </i></ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="main3">
+            <h4>Projects</h4>
+        </div>
+        <br><br><br>
+        <div class="crop">
+            <h4>Crop Prediction</h4>
+            <br><br>
+            <h6>Objective:</h6>
+            <ul><li>
+                Objective is to implement a crop predictor system. </li><li>
+                Crop prediction is performed based on textual dataset and any user can check type of crop best suits for conditions 
+                and get crop suggestions.</li></ul>
+            <h6>Used Technology:</h6>
+            <ul>
+                <li>Programming language :<span> Python</span></li>
+                <li>Machine learning algorithm<span>(knn)</span></li>
+            </ul>
+            <br><br>
+            <a href="https://github.com/Sahithi9653/crop-prediction-using-knn" target="_blank">Project Code</a>
+        </div>
+        <div class="feed">
+            <h4>Feedback Analysis</h4>
+            <br><br>
+            <h6>Objective:</h6>
+            <ul>
+                <li>
+                    Objective is to implement a feedback analyser system.
+                </li>
+                <li>
+                    Feedback analysis is performed based on the textual dataset and any user can check the type of feedback.
+                </li>
+            </ul>
+            <h6>Used Technology:</h6>
+            <ul>
+                <li>Programming language :<span> Python</span></li>
+                <li>nltk <span>vader</span></li>
+            </ul>
+            <a href="https://github.com/Sahithi9653/feedback_analysis" target="_blank">Project Code</a>
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

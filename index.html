@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="head">
+        <nav>
+            <img src="images/img1.jpg" class="icon">
+            <h1 class="title"><i>Sahithi Mandadi</i></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul><i>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internship.html">Internships</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </i></ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="main">
+            <h1>Hey, I'm Sahithi Mandadi</h1>
+            <div class="info">
+                <p>
+                    I am a B.Tech final year student.
+                </p>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="social">
+              <a href="https://www.linkedin.com/in/sahithi-mandadi-4b6954240" class="social-icon-link" target="_blank">
+                <img src="images/Linkedin.png"
+                  class="social-icon" />
+              </a>
+            </div>
+            <div class="social">
+              <a href="https://github.com/Sahithi9653/" class="social-icon-link" target="_blank">
+                <img src="images/GitHub_logo.png"
+                  class="social-icon" />
+              </a>
+            </div>
+            <div class="social">
+                <a href="https://leetcode.com/sahithi9653/" class="social-icon-link" target="_blank">
+                    <img src="images/leetcode.png"
+                      class="social-icon" />
+                  </a>
+            </div>
+          </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

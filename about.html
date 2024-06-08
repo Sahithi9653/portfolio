@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="head1">
+        <nav>
+            <img src="images/img1.jpg" class="icon">
+            <h1 class="title"><i>Sahithi Mandadi</i></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul><i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internship.html">Internships</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </i></ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="main1">
+            <p class="pm">About Me</p>
+            <p class="para1">I am a final year B.Tech student pursuing <br><span><i> COMPUTER SCIENCE AND ENGINEERING </i></span><br>
+                at <span> <b> <i> VIGNAN'S LARA INSTITUTE OF TECHNOLOGY & SCIENCE </i></b> </span>. <br>
+                Passionate about coding and technology. <br> I am eager to contribute to
+                innovative projects and <br> continue learning in the ever-evolving field of technology. <br>
+                I enjoy working on projects that challenge and enhance my skills.</p>
+            
+        </div>
+        <div class="btech">
+            <h4>B.Tech CSE</h4>
+            <p>Vignan's Lara Institute of Technology & Science
+            <br>CGPA: <span>8.67</span>  (2024)</p>
+        </div>
+        <div class="inter">
+            <h4>INTERMEDIATE - MPC</h4>
+            <P>Sri Chaitanya Jr College ,Vijayawada
+            <br>CGPA: <span>9.86 </span> (2020)</P>
+        </div>
+        <div class="ssc">
+            <h4>SECONDARY</h4>
+            <p>Sree Surya VidyaNiketan,Ongole
+                <br>CGPA: <span>9.8</span> (2018)
+            </p>
+        </div>
+        <div class="h_c">
+            <h4>
+                Certifications
+            </h4>
+        </div>
+        <div class="cer">
+            <ul>
+                <li class="c1">HTML - INFOSYS SPRINGBOARD</li>
+                <li class="c2">JAVASCRIPT - INFOSYS SPRINGBOARD</li>
+                <li class="c3">PYTHON FOR DATASCIENCE - NPTEL(ELITE)</li>
+                <li class="c4">PROGRAMMING ,DATA STRUCTURES & ALGORITHMS USING PYTHON - NPTEL(ELITE)</li>
+                <li class="c5">JOY OF COMPUTING USING PYTHON - NPTEL(ELITE+SILVER)</li>
+                <li class="c6">SQL - COURSERA</li>
+            </ul>
+        </div>
+        <div class="h_a">
+            <h4>
+                Achivements
+            </h4>
+        </div>
+        <div class="acv">
+            <ul>
+                <li class="a1">Secured 2395 rank in TCS-Codevita season 10</li>
+                <li class="a2">Secured an award for essay competition in mandal level on fuel consumption</li>
+                <li class="a3">Participated in College level Hackathon</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

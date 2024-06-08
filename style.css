@@ -1,0 +1,1070 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.head{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/back.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .icon{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+nav .title{
+    color: bisque;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.main .im{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+.main{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main h1{
+    font-size: 50px;
+    color: aquamarine;
+}
+.main .info{
+    font-size: 30px;
+    color: darkorange;
+}
+.socials{
+    width: 45px;
+    height: 180px;
+    background: linear-gradient(to top, rgba(158, 165, 210, 0.8)50%,rgba(158, 165, 210, 0.8)50%);
+    position: absolute;
+    top: 280px;
+    left: 0px;
+    border-radius: 30px;
+    padding: 15px;
+}
+.socials .social-icon{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.socials .social-icon-link:hover::after{
+    color: white;
+}
+nav .fa{
+    display: none;
+}
+.socials .social-icon:hover{
+    transform: scale(1.5);
+}
+@media(max-width: 700px)
+{
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a0a5e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+.head1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ab_bk.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main1 .pm{
+    font-size: 40px;
+    color: aquamarine;
+    margin-left: 80px;
+    text-align: left;
+}
+.main1 .para1{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(45, 43, 33);
+    width: 600px;
+    height: 180px;
+    background: linear-gradient(to top, rgba(192, 195, 215, 0.8)50%,rgba(192, 195, 215, 0.8)50%);
+    position: absolute;
+    border-radius: 30px;
+    right: 230px;
+    box-shadow: 10px 10px rgb(192, 195, 215,0.4);
+}
+.main1 .para1 span{
+    color: dimgray;
+}
+.btech{
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(to top, rgba(163, 172, 234, 0.8)50%,rgba(163, 172, 234, 0.8)50%);
+    margin-top: 250px;
+    margin-left: 200px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgb(163, 172, 234,0.4);
+}
+.btech h4{
+    color: rgb(22, 67, 95) ;
+}
+.btech p{
+    color: rgb(45, 43, 33);
+}
+.btech span{
+    color: rgb(195, 14, 14);
+}
+.inter{
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(to top, rgba(136, 150, 243, 0.8)50%,rgba(136, 150, 243, 0.8)50%);
+    margin-top: 50px;
+    margin-left: 630px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgb(136, 150, 243,0.4);
+}
+.inter h4{
+    color: rgb(22, 67, 95) ;
+}
+.inter p{
+    color: rgb(45, 43, 33);
+}
+.inter span{
+    color: rgb(195, 14, 14);
+}
+.ssc{
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(to top, rgba(163, 172, 234, 0.8)50%,rgba(163, 172, 234, 0.8)50%);
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgb(163, 172, 234,0.4);
+}
+.ssc h4{
+    color: rgb(22, 67, 95) ;
+}
+.ssc p{
+    color: rgb(45, 43, 33);
+}
+.ssc span{
+    color: rgb(195, 14, 14);
+}
+.h_c{
+    text-align: left;
+    font-size: 40px;
+    color: rgb(185, 133, 222);
+    margin-left: 600px;
+    margin-top: 30px;
+}
+.cer{
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    height: 200px;
+    background: linear-gradient(to top, rgba(121, 203, 236, 0.8)50%,rgba(121, 203, 236, 0.8)50%);
+    margin-top: 10px;
+    margin-left: 630px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgba(121, 203, 236, 0.4);
+}
+.cer ul{
+    list-style: none;
+}
+.cer ul .c1{
+    color: bisque;
+}
+.cer ul .c2{
+    color: rgb(216, 249, 180);
+}
+.cer ul .c3{
+    color: rgb(159, 228, 239);
+}
+.cer ul .c4{
+    color: rgb(13, 78, 244);
+}
+.cer ul .c5{
+    color: rgb(238, 181, 131);
+}
+.cer ul .c6{
+    color: bisque;
+}
+.h_a{
+    text-align: left;
+    font-size: 40px;
+    color: rgb(17, 122, 242);
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.acv{
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(to top, rgba(162, 206, 224, 0.8)50%,rgba(162, 206, 224, 0.8)50%);
+    margin-top: 10px;
+    margin-left: 230px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgba(162, 206, 224, 0.4);
+}
+.acv ul{
+    list-style: none;
+}
+.acv ul .a1{
+    color: greenyellow;
+}
+.acv ul .a2{
+    color: rgb(173, 244, 220);
+}
+@media(max-width:700px){
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a0a5e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .main1 .para1{
+        text-align: center;
+        font-size: 20px;
+        color: rgb(45, 43, 33);
+        width: 300px;
+        height: 380px;
+        background: linear-gradient(to top, rgba(192, 195, 215, 0.8)50%,rgba(192, 195, 215, 0.8)50%);
+        position: absolute;
+        border-radius: 30px;
+        right: 30px;
+        box-shadow: 10px 10px rgb(192, 195, 215,0.4);
+    }
+    .btech{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 100px;
+        background: linear-gradient(to top, rgba(163, 172, 234, 0.8)50%,rgba(163, 172, 234, 0.8)50%);
+        margin-top: 400px;
+        margin-left: 30px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgb(163, 172, 234,0.4);
+    }
+    .inter{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 100px;
+        background: linear-gradient(to top, rgba(136, 150, 243, 0.8)50%,rgba(136, 150, 243, 0.8)50%);
+        margin-top: 30px;
+        margin-left: 50px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgb(136, 150, 243,0.4);
+    }
+    .ssc{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 100px;
+        background: linear-gradient(to top, rgba(163, 172, 234, 0.8)50%,rgba(163, 172, 234, 0.8)50%);
+        margin-top: 30px;
+        margin-left: 30px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgb(163, 172, 234,0.4);
+    }
+    .cer{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 350px;
+        background: linear-gradient(to top, rgba(121, 203, 236, 0.8)50%,rgba(121, 203, 236, 0.8)50%);
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgba(121, 203, 236, 0.4);
+    }
+    .h_c{
+        text-align: left;
+        font-size: 40px;
+        color: rgb(185, 133, 222);
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .h_a{
+        text-align: left;
+        font-size: 40px;
+        color: rgb(17, 122, 242);
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .acv{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 200px;
+        background: linear-gradient(to top, rgba(162, 206, 224, 0.8)50%,rgba(162, 206, 224, 0.8)50%);
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgba(162, 206, 224, 0.4);
+    }
+}
+
+
+
+
+
+.head2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/skill.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    width: 100%;
+    margin-bottom: 90px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.header h2{
+    margin-bottom: -5px;
+    color: aquamarine;
+    font-size: 50px;
+    margin-left: -600px;
+    margin-top: 20px;
+}
+.header h2 span{
+    color: aqua;
+}
+.header p{
+    color: bisque;
+    font-size: 30px;
+    margin-left: -200px;
+}
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    
+}
+.skill-bar{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+.skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 20px;
+    color: rgb(176, 224, 167);
+}
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: aliceblue;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(92, 92, 239);
+    border-radius: 20px;
+}
+.skill-bar .info .percent{
+    font-weight: bold;
+}
+.skill-bar .bar .html{
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.skill-bar .bar .css{
+    width: 85%;
+    animation: css 3s;
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.skill-bar .bar .js{
+    width: 70%;
+    animation: js 3s;
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.skill-bar .bar .c{
+    width: 80%;
+    animation: c 3s;
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skill-bar .bar .cpp{
+    width: 85%;
+    animation: cpp 3s;
+}
+@keyframes cpp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.skill-bar .bar .py{
+    width: 80%;
+    animation: py 3s;
+}
+@keyframes py{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skill-bar .bar .sql{
+    width: 80%;
+    animation: sql 3s;
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skill-bar .bar .ds{
+    width: 60%;
+    animation:ds 3s;
+}
+@keyframes ds{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.skill-bar .bar .al{
+    width: 50%;
+    animation: al 3s;
+}
+@keyframes al{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@media(max-width: 700px)
+{
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a0a5e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .header h2{
+        margin-bottom: -5px;
+        color: aquamarine;
+        font-size: 50px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .header p{
+        color: bisque;
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .skill-main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+        
+    }
+    .skill-bar{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+.head3{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/project.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main3 h4{
+    color: grey;
+    font-size: 50px;
+    margin-left: 80px;
+    text-align: left;
+}
+.crop{
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(10, 17, 66, 0.8)50%,rgba(10, 17, 66, 0.8)50%);
+    margin-top: 0px;
+    margin-left: 130px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgba(94, 113, 218, 0.4);
+}
+.crop h4{
+    color: rgb(121, 67, 155);
+    font-size: 40px;
+    margin-left: 150px;
+    text-align: left;
+}
+.crop h6{
+    color: chocolate;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 100px;
+}
+.crop ul{
+    list-style: decimal;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 25px;
+    color: rgb(214, 115, 179);
+}
+.crop span{
+    color: rgb(239, 180, 211);
+}
+.crop a{
+    
+    font-size: 30px;
+    color: green;
+}
+.crop a:hover{
+    color: blue;
+}
+.feed{
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(10, 17, 66, 0.8)50%,rgba(10, 17, 66, 0.8)50%);
+    margin-top: 20px;
+    margin-left: 330px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgba(94, 113, 218, 0.4);
+}
+.feed h4{
+    color: rgb(121, 67, 155);
+    font-size: 40px;
+    margin-left: 150px;
+    text-align: left;
+}
+.feed h6{
+    color: chocolate;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 100px;
+}
+.feed ul{
+    list-style: decimal;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 25px;
+    color: rgb(214, 115, 179);
+}
+.feed span{
+    color: rgb(239, 180, 211);
+}
+.feed a{
+    
+    font-size: 30px;
+    color: green;
+}
+.feed a:hover{
+    color: blue;
+}
+@media(max-width: 700px)
+{
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a0a5e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .crop{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 850px;
+        background: linear-gradient(to top, rgba(10, 17, 66, 0.8)50%,rgba(10, 17, 66, 0.8)50%);
+        margin-top: 0px;
+        margin-left: 20px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgba(94, 113, 218, 0.4);
+    }
+    .crop h4{
+        color: rgb(121, 67, 155);
+        font-size: 40px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .feed{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 800px;
+        background: linear-gradient(to top, rgba(10, 17, 66, 0.8)50%,rgba(10, 17, 66, 0.8)50%);
+        margin-top: 20px;
+        margin-left: 50px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgba(94, 113, 218, 0.4);
+    }
+    .feed h4{
+        color: rgb(121, 67, 155);
+        font-size: 40px;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+
+
+
+.head4{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/intern.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main4 h4{
+    color: rgb(225, 180, 180);
+    font-size: 50px;
+    margin-left: 80px;
+    text-align: left;
+}
+.ml{
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    height: 350px;
+    background: linear-gradient(to top, rgba(171, 174, 229, 0.915)50%,rgba(171, 174, 229, 0.915)50%);
+    margin-top: 0px;
+    margin-left: 130px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgba(209, 209, 204, 0.4);
+}
+.ml h4{
+    color: rgb(90, 92, 205);
+    font-size: 40px;
+    margin-left: 150px;
+    text-align: left;
+}
+.ml h6{
+    color: rgb(111, 64, 31);
+    font-size: 30px;
+    text-align: left;
+    margin-left: 100px;
+}
+.ml ul{
+    list-style: decimal;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 25px;
+    color: rgb(40, 36, 113);
+}
+.dev{
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    height: 500px;
+    background: linear-gradient(to top,rgba(171, 174, 229, 0.915)50%,rgba(171, 174, 229, 0.915)50%);
+    margin-top: 10px;
+    margin-left: 330px;
+    border-radius: 30px;
+    box-shadow: 10px 10px rgba(209, 209, 204, 0.4);
+}
+.dev h4{
+    color: rgb(90, 92, 205);
+    font-size: 40px;
+    margin-left: 150px;
+    text-align: left;
+}
+.dev h6{
+    color: rgb(111, 64, 31);
+    font-size: 30px;
+    text-align: left;
+    margin-left: 100px;
+}
+.dev ul{
+    list-style: decimal;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 25px;
+    color:  rgb(40, 36, 113);
+}
+@media(max-width: 700px)
+{
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a0a5e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .ml{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 980px;
+        background: linear-gradient(to top, rgba(209, 209, 204, 0.915)50%,rgba(209, 209, 204, 0.915)50%);
+        margin-top: 0px;
+        margin-left: 20px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgba(209, 209, 204, 0.4);
+    }
+    .ml h4{
+        color: rgb(90, 92, 205);
+        font-size: 40px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .dev{
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        height: 1800px;
+        background: linear-gradient(to top, rgba(209, 209, 204, 0.915)50%,rgba(209, 209, 204, 0.915)50%);
+        margin-top: 10px;
+        margin-left: 40px;
+        border-radius: 30px;
+        box-shadow: 10px 10px rgba(209, 209, 204, 0.4);
+    }
+    .dev h4{
+        color: rgb(151, 23, 193);
+        font-size: 40px;
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+
+
+
+
+.head5{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(114, 140, 242, 0.7),rgba(114, 140, 242,0.7)),url(images/contact.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main5{
+    text-align: center;
+}
+.main5 .content h2{
+    text-align: left;
+    margin-left: 140px;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(193, 229, 108);
+}
+.main5 .content{
+    margin-left: 100px;
+}
+.main5 .container{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.main5 .container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.main5 .container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.main5 .container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    font-size: 22px;
+}
+.main5 .container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.main5 .container .contactinfo .box .text h3{
+    font-weight: 300;
+    color: #5ee524;
+}
+.socs{
+    width: 45px;
+    height: 180px;
+    background: linear-gradient(to top, rgba(158, 165, 210, 0.8)50%,rgba(158, 165, 210, 0.8)50%);
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    border-radius: 30px;
+    padding: 15px;
+}
+.socs .soc-icon{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.socs .soc-icon:hover{
+    transform: scale(1.5);
+}
+@media(max-width: 700px)
+{
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a0a5e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .socs{
+        width: 45px;
+        height: 180px;
+        background: linear-gradient(to top, rgba(158, 165, 210, 0.8)50%,rgba(158, 165, 210, 0.8)50%);
+        position: absolute;
+        top: 250px;
+        right: 0px;
+        border-radius: 30px;
+        padding: 15px;
+    }
+    .main5 .content h2{
+        text-align: left;
+        margin-left: 0px;
+        font-size: 50px;
+        font-weight: 500;
+        color: rgb(193, 229, 108);
+    }
+    .main5 .content{
+        margin-left: 40px;
+    }
+    .main5 .container{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}

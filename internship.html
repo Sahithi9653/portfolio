@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="head4">
+        <nav>
+            <img src="images/img1.jpg" class="icon">
+            <h1 class="title"><i>Sahithi Mandadi</i></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul><i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </i></ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="main4">
+            <h4>Internships</h4>
+        </div>
+        <br><br><br>
+        <div class="ml">
+            <h4>Python For Machine Learning</h4>
+            <br><br>
+            <h6>Objective:</h6>
+            <ul><li>
+                Python has become the go-to language for machine learning due to its simplicity, powerful libraries, strong community support and adaptability.</li>
+                <li> Python provides a robust environment for developing and deploying machine learning models, making it an essential tool in the field of artificial intelligence and data science</li></ul>
+            <h6>Duration:</h6>
+            <ul>6weeks</ul>
+        </div>
+        <div class="dev">
+            <h4>Devops</h4>
+            <br><br>
+            <h6>Objective:</h6>
+            <ul>
+                In simple terms, DevOps is a software development approach that emphasizes collaboration and integration 
+between development (Dev) and operations (Ops) teams. It aims to streamline the software development 
+lifecycle by breaking down the barriers between these traditionally separate functions. The main goal of 
+DevOps is to deliver software faster and more reliably, ensuring that development and operations teams work 
+together seamlessly to build, test, deploy, and maintain applications. By promoting automation, continuous 
+integration, continuous delivery, and monitoring, DevOps fosters a culture of communication, feedback, and 
+continuous improvement, leading to higher-quality software and more efficient development processes.</ul>
+            <h6>Duration:</h6>
+            <ul>6weeks</ul>
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
